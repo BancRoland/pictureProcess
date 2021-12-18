@@ -1,5 +1,13 @@
 close all;
 clear all;
 
-image = imread('bird.jpg');
+imageRaw = imread('bird.png');
+%%
 
+image=imageRaw(:,:,1);
+
+imagesc(image)
+axis equal
+
+%%
+imwrite(A,'output.png');
